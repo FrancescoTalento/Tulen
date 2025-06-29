@@ -1,0 +1,80 @@
+@import url(./menu.css);
+@import url(./style.css);
+
+.contactBox{
+    padding-top: 40px;
+    position: absolute;
+    background: #fff;
+    max-width: 1120px;
+    width: 100%;
+    left: calc(50% - 560px);
+    bottom: 87px;
+    text-align: center;
+    border-radius: 8px;
+    -webkit-box-shadow: 0 0 103px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 0 103px rgba(0, 0, 0, 0.08);
+}
+
+.flexContainer{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.contactItemFlex{
+            flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+        position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.contactInfo{
+        margin-bottom: 35px;
+}
+
+.contactInfo i{
+        display: block;
+    font-size: 48px;
+    color: #2916e0;
+    margin-bottom: 20px;
+}
+
+.contactInfo i::before{
+    content: "";
+    display: inline-block;
+    
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+.contactItemFlex:nth-child(1) i::before{
+    background-image: url(../img/contact/location.png);
+}
+
+.contactItemFlex:nth-child(2) i::before{
+    background-image: url(../img/contact/email.png);
+}
+
+.contactItemFlex:nth-child(3) i::before{
+    background-image: url(../img/contact/clock.png);
+}
+
+
+.contactInfo p{
+        line-height: 1.8;
+            margin-bottom: 0;
+    font-size: 18px;
+    color: #252525;
+    font-weight: 500;
+}
+.contactInfo span{
+    color: #b2b2b2;
+    font-weight: 400;
+}

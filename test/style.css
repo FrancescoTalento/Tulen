@@ -1,0 +1,55 @@
+
+h1 {
+	text-align: center;
+	font-size: 1.25em;
+	font-weight: normal;
+}
+
+body {
+	font-family: monospace;
+	color: #333;
+	padding-bottom: 60px;
+	margin: 0px;
+	width: 100vw;
+	height: 100%;
+}
+
+body > div {
+	padding: 40px 0;
+}
+
+body > div:nth-of-type(even) {
+	background: rgba(0,0,0,.03);
+}
+
+body > div > img {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(5, minmax(200px, 1fr));
+    max-width: 1000px;
+  
+}
+
+.grid-template-rows-1 {
+	grid-template-rows: repeat(1fr);
+}
+
+
+/* Grid Item */
+.item {
+	margin: 5px;
+	background: tomato;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+.grid {
+	
+	margin: 0 auto;
+	border: 1px solid #ccc;
+}

@@ -1,0 +1,207 @@
+@import url(./style.css);
+@import url(./menu.css);
+
+body{
+    overflow-y: scroll;
+}
+
+.abouContent{
+    
+    height: 100vh;
+    margin-left: 90px;
+}
+
+.aboutFlexContainer{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.aboutLeft{
+    background: #2916e0;
+    flex: 0 0 47%;
+    max-width: 47%;
+    padding: 0 15px;
+}
+
+.aboutRight{
+    
+    flex: 0 0 53%;
+    max-width: 53%;
+    padding: 0 15px;
+}
+
+.aboutRight h2{
+        font-size: 36px;display: inline-block;
+    padding-bottom: 8px;
+    border-bottom: 3px solid #2916e0;
+    margin-bottom: 20px;
+        color: #252525;
+    font-weight: 600;
+}
+
+.aboutTxt{
+    max-width: 810px;
+    margin: 0 auto;
+    padding: 75px 0 50px;
+}
+.aboutTxt p{
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 9px;
+        color: #636363;
+}
+
+
+.aboutTxt h2:last-of-type{
+    padding-top: 50px !important;
+}
+.aboutSkills{
+    
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    
+
+}
+.flexItemSkill{
+        display: flex;
+        
+        
+        flex: 0 0 25%;
+        max-width: 25%;
+        
+}
+
+.aboutFlexContainer2{
+flex: 0 0 25%;
+        max-width: 25%;
+         display: flex;
+    justify-content: center;
+    
+        
+}
+.circleSkill{
+    width: 100%;
+    margin-bottom: 30px;
+    align-self: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.circleProgress{
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 10px;
+ width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: conic-gradient(
+        blue 0% 90%,
+        #e6e6e6 90% 100%
+    );
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circleProgress::before {
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    background: white;
+    border-radius: 50%;
+}
+
+.circleProgress > div:first-of-type{
+    transform: rotate(90deg);
+}
+
+.progress-info{
+        position: absolute;
+    width: 100%;
+    top: 50%;
+    margin-top: -10px;
+}
+.progress-info h2{
+        font-size: 16px;
+    line-height: 1;
+    font-weight: 600;
+    border: none;
+}
+
+.circleSkill h4{
+        font-size: 20px;
+    font-weight: 600;
+}
+
+.about-img{
+    text-align: center;
+    background-image: url(../img/about/about-bg.png);
+    background-repeat: no-repeat;
+    background-size: inherit;
+    background-position: center center;
+    overflow: hidden;
+       display: flex;
+    justify-content: center;    
+    
+}
+.about-img div{
+     border-radius: 50%;
+        width: 515px;
+    height: 515px;
+    overflow: hidden;
+    margin: 82px 0 50px;
+}
+.about-img img{
+   
+    
+    
+}
+
+.aboutProfileText{
+        max-width: 550px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+.aboutProfileText h2{
+        font-weight: 500;    
+        font-size: 36px;
+        color: #fff;
+}
+
+.aboutProfileText p{
+        padding-top: 20px;
+    margin-bottom: 30px;
+        color: #fff;
+        font-size: 15px;
+        line-height: 1.8;
+}
+
+.aboutProfileText a:first-of-type{
+    display: inline-block;
+    min-width: 160px;
+    padding: 9px 10px;
+    margin-bottom: 10px;
+    margin-right: 28px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 50px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.aboutProfileText a:last-of-type{
+    display: inline-block;
+    font-style: italic;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: underline;
+}
